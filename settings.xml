@@ -1,0 +1,32 @@
+<settings>
+<servers>
+  <server>
+    <id>sofiane-devops-devops-cicd-codeA-repo</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>sofiane-devops-devops-cicd-codeA-repo</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>sofiane-devops-devops-cicd-codeA-repo</id>
+        <url>https://sofiane-devops-093531938598.d.codeartifact.eu-west-3.amazonaws.com/maven/devops-cicd-codeA-repo/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>sofiane-devops-devops-cicd-codeA-repo</id>
+    <name>sofiane-devops-devops-cicd-codeA-repo</name>
+    <url>https://sofiane-devops-093531938598.d.codeartifact.eu-west-3.amazonaws.com/maven/devops-cicd-codeA-repo/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+
+</settings>
